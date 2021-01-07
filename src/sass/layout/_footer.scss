@@ -1,0 +1,35 @@
+.footer {
+  background-color: $olive-tertiary;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem;
+  gap: 1rem;
+  text-align: center;
+  word-wrap: normal;
+
+  &__logo {
+    margin-bottom: 7.5rem;
+  }
+
+  &__links {
+    @include centerFlex;
+    gap: 2.5rem;
+    flex-flow: wrap;
+
+    a {
+      transition: all .2s;
+    }
+
+    a:link,
+    a:visited {
+      @include linkStyle-link-visited;
+    }
+
+    a:active,
+    a:hover {
+      @include linkStyle-active-hover;
+    }
+  }
+}

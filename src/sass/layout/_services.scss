@@ -1,0 +1,45 @@
+.services {
+  color: $dark-main;
+  @include centerFlex;
+  justify-content: space-evenly;
+  flex-flow: wrap;
+  text-align: center;
+  padding: 7.5rem;
+
+
+  @include respond(min-desktop) {
+    flex-flow: nowrap;
+  }
+
+  &__details {
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 30rem;
+    width: 20rem;
+    margin: 2rem;
+    padding: 2rem;
+    background-color: rgba($olive-main, 0.67);
+    border: rgba($olive-secondary, 0.2) solid 1px;
+    border-radius: .25rem;
+    @include boxShadow;
+
+  }
+
+  &__icon {
+    margin-top: 2rem;
+    height: 5rem;
+  }
+
+  &__title {
+    margin: 2rem 0;
+
+    span {
+      padding-bottom: .5rem;
+      border-bottom: 2px solid $dark-main;
+    }
+  }
+
+  &__details {
+    font-weight: 300;
+  }
+}

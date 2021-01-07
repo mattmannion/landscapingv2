@@ -1,0 +1,114 @@
+@mixin respond ($breakpoint) {
+
+  @if $breakpoint==fourK {
+    @media screen and (min-width: 2560px) {
+      @content
+    }
+
+    ;
+  }
+
+  @if $breakpoint==desktop {
+    @media screen and (min-width: 1920px) {
+      @content
+    }
+
+    ;
+  }
+
+  @if $breakpoint==min-desktop {
+    @media screen and (min-width: 1920px) {
+      @content
+    }
+
+    ;
+  }
+
+  @if $breakpoint==desktop-s {
+    @media screen and (min-width: 1440px) {
+      @content
+    }
+
+    ;
+  }
+
+  @if $breakpoint==fourthree {
+    @media screen and (min-width: 1024px) {
+      @content
+    }
+
+    ;
+  }
+
+  @if $breakpoint==tab {
+    @media screen and (min-width: 768px) {
+      @content
+    }
+
+    ;
+  }
+
+  @if $breakpoint==phone-l {
+    @media screen and (min-width: 425px) {
+      @content
+    }
+
+    ;
+  }
+
+  @if $breakpoint==phone-m {
+    @media screen and (max-width: 375px) {
+      @content
+    }
+
+    ;
+  }
+
+  @if $breakpoint==phone-s {
+    @media screen and (max-width: 320px) {
+      @content
+    }
+
+    ;
+  }
+
+  @if $breakpoint==phone-xs {
+    @media screen and (max-width: 280px) {
+      @content
+    }
+
+    ;
+  }
+}
+
+@mixin centerFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin fixedCenter {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin linkStyle-link-visited {
+  text-decoration: none;
+  color: $sage-main;
+  padding-bottom: .25rem;
+  border-bottom: $sage-main 1px solid;
+  font-weight: 300;
+}
+
+@mixin linkStyle-active-hover {
+  text-decoration: none;
+  color: $sage-secondary;
+  border-bottom: $sage-secondary 1px solid;
+}
+
+@mixin boxShadow {
+  box-shadow: 1rem 1rem 5rem rgba($dark-main, 0.5);
+}

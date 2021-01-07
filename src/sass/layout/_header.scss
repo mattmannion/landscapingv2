@@ -1,0 +1,49 @@
+.header {
+  overflow: hidden;
+  @include centerFlex;
+  position: relative;
+  flex-flow: column;
+
+  .company {
+    @include fixedCenter;
+    top: 33%;
+
+    &-title {
+      word-wrap: normal;
+      text-align: center;
+    }
+  }
+
+  a {
+    transition: all .2s;
+  }
+
+  a:link,
+  a:visited {
+    @include linkStyle-link-visited;
+    border-bottom: none;
+  }
+
+  a:active,
+  a:hover {
+    color: $olive-main;
+
+  }
+
+  .nav-snap {
+    @include fixedCenter;
+    top: 90%;
+    text-align: center;
+  }
+
+  .hero-image {
+    filter: brightness(20%); //adjust shadow for image.
+    height: 94vh;
+    opacity: 1;
+    width: auto;
+
+    @include respond(min-desktop) {
+      width: 100%;
+    }
+  }
+}

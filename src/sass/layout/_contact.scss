@@ -1,0 +1,36 @@
+.contact {
+  @include centerFlex;
+  margin-bottom: 10rem;
+
+  &__container {
+    text-align: center;
+    background-image: linear-gradient(120deg, $olive-secondary, $olive-tertiary);
+    padding: 2.5rem;
+    width: 35rem;
+    border-radius: .25rem;
+
+  }
+
+  &__title {
+    margin-bottom: 2.5rem;
+
+    span {
+      padding-bottom: .5rem;
+      border-bottom: $sage-main solid 1px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 1.5rem 0;
+    font-weight: 300;
+    text-align: left;
+  }
+
+  &__icon {
+    height: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
