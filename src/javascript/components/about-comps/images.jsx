@@ -7,12 +7,12 @@ import excavator_tall from '../../../resources/img/excavator_tall.PNG';
 
 export const images = [
   {
-    id: 0,
-    image: plants_1,
-  },
-  {
     id: 1,
     image: cleared_land_1,
+  },
+  {
+    id: 0,
+    image: plants_1,
   },
   // {
   //   id: 2,

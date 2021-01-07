@@ -1,0 +1,33 @@
+// $arrow-position: 13.5rem;
+$arrow-position: 35%;
+$arrow-height: 7.5rem !important;
+
+.slider {
+  @include centerFlex;
+  position: relative;
+
+
+  &__photo {
+    opacity: 0;
+  }
+
+  .active {
+    opacity: 1;
+    transition: opacity 1s ease-in;
+  }
+
+  &__arrow {
+    position: absolute;
+    height: $arrow-height;
+    z-index: 1;
+    cursor: pointer;
+  }
+
+  &__la {
+    right: $arrow-position;
+  }
+
+  &__ra {
+    left: $arrow-position;
+  }
+}

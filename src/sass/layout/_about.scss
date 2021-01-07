@@ -4,6 +4,14 @@
   margin-top: 5rem;
   margin-bottom: 10rem;
 
+  &__underline {
+    margin-bottom: 2rem;
+
+    span {
+      border-bottom: $dark-main solid 2px;
+      padding-bottom: .5rem;
+    }
+  }
 
   &__container {
     @include centerFlex;
@@ -11,41 +19,34 @@
     flex-flow: column;
     background-color: rgba($dark-main, 0.35);
     color: $dark-main;
-    height: 53.5rem;
+    height: 61.5rem;
     width: 30rem;
     padding: 2rem;
     border-radius: .25rem;
     @include boxShadow;
 
     @include respond(phone-l) {
-      height: 57.5rem;
+      height: 65rem;
       width: 35rem;
     }
 
     @include respond(fourthree) {
-      height: 80rem;
-      width: 55rem;
+      height: 70rem;
+      width: 40rem;
     }
   }
 
   &__details {
     font-size: 2.5rem;
     font-weight: 300;
+    margin-bottom: 2rem;
 
-    h3 {
-      margin-bottom: 2rem;
-
-
-      span {
-        border-bottom: $dark-main solid 2px;
-        padding-bottom: .5rem;
-      }
-    }
   }
 
   &__photo-viewer {
     @include centerFlex;
     text-align: center;
+    margin-top: 2rem;
 
     img {
       height: 40rem;
@@ -60,8 +61,8 @@
       }
 
       @include respond(fourthree) {
-        height: 65rem;
-        width: 50rem;
+        height: 50rem;
+        width: 40rem;
       }
     }
   }

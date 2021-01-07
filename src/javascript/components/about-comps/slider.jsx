@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { images } from './images';
+import left_arrow from '../../../resources/icons/caret-left.svg';
+import right_arrow from '../../../resources/icons/caret-right.svg';
 
 export default function Slider({ slides }) {
   const [current, setCurrent] = useState(0);
@@ -17,18 +19,32 @@ export default function Slider({ slides }) {
 
   return (
     <>
-      <div onClick={prev}>left arrow</div>
-      {images.map((img, index) => {
-        return (
-          <div
-            key={img.id}
-            className={index === current ? 'slide active' : 'slide'}
-          >
-            {index === current && <img src={img.image} alt='photos' />}
-          </div>
-        );
-      })}
-      <div onClick={next}>right arrow</div>
+      <div className='slider'>
+        <img
+          src={left_arrow}
+          alt='left arrow'
+          className='slider__la slider__arrow'
+          onClick={prev}
+        />
+        {images.map((img, index) => {
+          return (
+            <div
+              key={img.id}
+              className={
+                index === current ? 'slider__photo active' : 'slider__photo'
+              }
+            >
+              {index === current && <img src={img.image} alt='photos' />}
+            </div>
+          );
+        })}
+        <img
+          src={right_arrow}
+          alt='right arrow'
+          className='slider__ra slider__arrow'
+          onClick={next}
+        />
+      </div>
     </>
   );
 }

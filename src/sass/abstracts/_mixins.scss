@@ -16,14 +16,6 @@
     ;
   }
 
-  @if $breakpoint==min-desktop {
-    @media screen and (min-width: 1920px) {
-      @content
-    }
-
-    ;
-  }
-
   @if $breakpoint==desktop-s {
     @media screen and (min-width: 1440px) {
       @content

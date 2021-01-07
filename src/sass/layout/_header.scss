@@ -1,16 +1,25 @@
 .header {
-  overflow: hidden;
   @include centerFlex;
-  position: relative;
   flex-flow: column;
+  position: relative;
+  overflow: hidden;
 
-  .company {
+  height: 100vh;
+  background: linear-gradient(90deg, rgba($black, 0.8),
+      rgba($black, 0.8)),
+    url('../../resources/img/excavator_main.PNG');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  text-align: center;
+
+  &__title {
     @include fixedCenter;
     top: 33%;
 
     &-title {
       word-wrap: normal;
-      text-align: center;
     }
   }
 
@@ -30,20 +39,9 @@
 
   }
 
-  .nav-snap {
+  &__cta {
     @include fixedCenter;
-    top: 90%;
+    top: 87.5%;
     text-align: center;
-  }
-
-  .hero-image {
-    filter: brightness(20%); //adjust shadow for image.
-    height: 94vh;
-    opacity: 1;
-    width: auto;
-
-    @include respond(min-desktop) {
-      width: 100%;
-    }
   }
 }
