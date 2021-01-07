@@ -8,12 +8,19 @@
 body {
   box-sizing: border-box;
 
-  // both remove scroll bar 
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+  @include respond(tab-max) {
+    // both remove scroll bar 
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  overflow-x: hidden;
 }
 
-// removes scroll bar
 body::-webkit-scrollbar {
-  display: none;
+  @include respond(tab-max) {
+
+    // removes scroll bar
+    display: none;
+  }
 }

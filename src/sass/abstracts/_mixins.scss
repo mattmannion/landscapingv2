@@ -40,6 +40,14 @@
     ;
   }
 
+  @if $breakpoint==tab-max {
+    @media screen and (max-width: 768px) {
+      @content
+    }
+
+    ;
+  }
+
   @if $breakpoint==phone-l {
     @media screen and (min-width: 425px) {
       @content
@@ -102,5 +110,16 @@
 }
 
 @mixin boxShadow {
-  box-shadow: 1rem 1rem 5rem rgba($dark-main, 0.5);
+  box-shadow: 1rem 1rem 5rem rgba($black, 0.5);
+}
+
+@mixin boxShadow-thick {
+  box-shadow: 1rem 1rem 5rem rgba($black, 0.75);
+}
+
+@mixin fixedBG {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }

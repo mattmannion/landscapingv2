@@ -7,10 +7,7 @@
   background: linear-gradient(90deg, rgba($black, 0.8),
       rgba($black, 0.8)),
     url('../../resources/img/excavator_main.PNG');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+  @include fixedBG;
   text-align: center;
 
   &__title {
