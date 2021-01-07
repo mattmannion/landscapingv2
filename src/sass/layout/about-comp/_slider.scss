@@ -13,7 +13,7 @@ $arrow-height: 7.5rem !important;
 
   .active {
     opacity: 1;
-    transition: opacity 1s ease-in;
+    transition: opacity .75s ease-in;
   }
 
   &__arrow {
