@@ -3,5 +3,7 @@
       $pewter-main,
       rgba($black, 0.55));
   @include fixedBG;
+  z-index: -1;
+
   // width: 100%;
 }
