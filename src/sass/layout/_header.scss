@@ -2,13 +2,14 @@
   @include centerFlex;
   flex-flow: column;
   position: relative;
-  overflow: hidden;
   height: 100vh;
   background: linear-gradient(90deg, rgba($black, 0.8),
       rgba($black, 0.8)),
     url('../../resources/img/excavator_main.PNG');
   @include fixedBG;
   text-align: center;
+  overflow: hidden;
+  overflow-y: scroll;
 
   &__title {
     @include fixedCenter;
