@@ -62,7 +62,17 @@
     }
 
     ;
+
   }
+
+  @if $breakpoint==phone-m-min {
+    @media screen and (min-width: 375px) {
+      @content
+    }
+
+    ;
+  }
+
 
   @if $breakpoint==phone-s {
     @media screen and (max-width: 320px) {

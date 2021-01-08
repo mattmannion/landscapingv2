@@ -25,6 +25,11 @@
     border-radius: .25rem;
     @include boxShadow;
 
+    @include respond(phone-m-max) {
+      height: 62.5rem;
+      width: 32.5rem;
+    }
+
     @include respond(phone-l) {
       height: 65rem;
       width: 35rem;
