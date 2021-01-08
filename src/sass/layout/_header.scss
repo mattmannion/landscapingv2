@@ -9,7 +9,6 @@
   @include fixedBG;
   text-align: center;
   overflow: hidden;
-  overflow-y: scroll;
   z-index: 0;
 
   @include respond(tab-max) {
