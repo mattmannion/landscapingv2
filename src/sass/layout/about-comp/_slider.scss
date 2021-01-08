@@ -21,6 +21,8 @@ $arrow-height: 7.5rem !important;
     height: $arrow-height;
     z-index: 1;
     cursor: pointer;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
   }
 
   &__la {
