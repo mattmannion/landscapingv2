@@ -10,8 +10,11 @@
   text-align: center;
   overflow: hidden;
   overflow-y: scroll;
-  background-attachment: local;
   z-index: 0;
+
+  @include respond(tab-max) {
+    background-attachment: local;
+  }
 
   &__title {
     @include fixedCenter;
