@@ -2,7 +2,7 @@
   @include centerFlex;
   flex-flow: column;
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(90deg, rgba($black, 0.8),
       rgba($black, 0.8)),
     url('../../resources/img/excavator_main.PNG');
